@@ -1,5 +1,6 @@
-import express from "express";
+import {server } from "./http";
+import "./websocket/ChatService";
 
-const app = express();
 
-app.listen(3000 , () => console.log("server start !"))
+server.listen(3000 , () => console.log("server start !"))
+
